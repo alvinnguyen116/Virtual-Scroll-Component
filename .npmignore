@@ -2,3 +2,4 @@ node_modules
 src
 babel.config.js
 webpack.config.js
+images

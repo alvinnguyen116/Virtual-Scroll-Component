@@ -1,4 +1,5 @@
 # Virtual Scroll Component 
+
 A React wrapper component for simulating a virtual scroll.
  
  This is meant to be a lightweight component to be used in personal projects or small applications. If your use case requires more flexibility, 
