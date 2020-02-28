@@ -39,7 +39,7 @@ import VirtualScroll from 'virtual-scroll-component';
 ### rows
 Use **rows** to pass an array of component instances to be placed in a virtualized scroll
 container. This can also be done with **props.children**, but do
-note that any arguments passed to **props.children** will take precedence over 
+note that any arguments passed to **props.children** takes precedence over 
 **rows**. 
 
 ```js
@@ -53,8 +53,7 @@ note that any arguments passed to **props.children** will take precedence over
 ```
 
 ### rowHeight 
-Use **rowHeight** to set the height of every row passed in either through 
-**rows** or **props.children**. Accepts an integer and is interpreted in CSS pixels. 
+Use **rowHeight** to set the height of each row. Accepts an integer and is interpreted in CSS pixels. 
 
 ```js
 <VirtualScroll rowHeight={100}/> 
@@ -74,7 +73,7 @@ return (<VirtualScroll rows={rows} onLastRow={handleLastRow}/>);
 ```
 
 ### className 
-Use **className** to add a CSS class onto the Virtual Scroll Component.
+Use **className** to add a CSS class onto the VirtualScroll component.
 By default, elements are rendered vertically. Use **className** to override default styles. 
 ```js
 <VirtualScroll className={"custom-class-name"}/>
@@ -83,7 +82,7 @@ By default, elements are rendered vertically. Use **className** to override defa
 ### props.children 
 Use **props.children** to pass a list of component instances to be placed in a virtualized scroll
 container. This can also be done with **rows**, but do
-note that any arguments passed to **props.children** will take precedence over **rows**. 
+note that any arguments passed to **props.children** takes precedence over **rows**. 
 
 ```js
 <VirtualScroll>
@@ -94,18 +93,18 @@ note that any arguments passed to **props.children** will take precedence over *
 
 ### Pitfalls 
 
-This package does not support elements with different heights.
+This package does not support elements with varying heights.
 
 ### Development
 There are some scripts available in package.json. 
 
-- `npm start` - to watch for file changes and update automatically with webpack
-- `npm build` - to build the virtual-scroll-component to ./dist/index.js 
-- `npm jest` - to run unit tests 
+- `yarn start` - to watch for file changes and update automatically with webpack
+- `yarn build` - to build the package and store in ./dist/index.js 
+- `yarn jest` - to run unit tests 
 
 I welcome any from of participation, so feel free to submit an [issue](https://github.com/alvinnguyen116/Virtual-Scroll-Component/issues) or make a 
 [pull request](https://github.com/alvinnguyen116/Virtual-Scroll-Component/pulls). 
 
 ### Acknowledgement
-Big thanks to [BP mishra](https://github.com/bindhyeswari) for his guidance throughout this project. 
+Big thanks to [BP mishra](https://github.com/bindhyeswari) for his guidance throughout this project!
 
