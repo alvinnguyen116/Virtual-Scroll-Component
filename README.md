@@ -1,10 +1,25 @@
 # Virtual Scroll Component 
 
-A React wrapper component for simulating a virtual scroll.
- 
- This is meant to be a lightweight component to be used in personal projects or small applications. If your use case requires more flexibility, 
-I suggest taking a look at [React Virtualized Scroll](https://github.com/bvaughn/react-virtualized/tree/master/docs#documentation).
+Virtual and infinite scrolling for a list of elements. 
+A wrapper component to be used in the [React](https://reactjs.org/) framework.
 
+- [Motivation](#motivation)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Pitfalls](#pitfalls)
+- [Development](#development)
+- [Acknowledgement](#acknowledgement)
+
+## Motivation
+Rendering hundreds of elements in DOM can be slow,
+especially if your elements are non-trivial. Instead, we can
+simply render elements as necessary when they are scrolled into view. This is called **virtual scrolling**. 
+
+![](images/virtual-scroll-example.png)
+
+As you can imagine, rendering only view-able elements can cause 
+unnecessary document scrolling as the position of HTML elements are usually relative.
+We can fix this by wrapping a container with fixed height around every element, and only render the child element when necessary.
 ## Installation 
 Install through [npm](https://www.npmjs.com/get-npm) or [yarn](https://classic.yarnpkg.com/en/docs/getting-started).
 ```shell script
@@ -60,7 +75,7 @@ return (<VirtualScroll rows={rows} onLastRow={handleLastRow}/>);
 
 ### className 
 Use **className** to add a CSS class onto the Virtual Scroll Component.
-
+By default, elements are rendered vertically. Use **className** to override default styles. 
 ```js
 <VirtualScroll className={"custom-class-name"}/>
 ```
@@ -76,3 +91,21 @@ note that any arguments passed to **props.children** will take precedence over *
     <div/>
 </VirtualScroll>
 ```
+
+### Pitfalls 
+
+This package does not support elements with different heights.
+
+### Development
+There are some scripts available in package.json. 
+
+- `npm start` - to watch for file changes and update automatically with webpack
+- `npm build` - to build the virtual-scroll-component to ./dist/index.js 
+- `npm jest` - to run unit tests 
+
+I welcome any from of participation, so feel free to submit an [issue](https://github.com/alvinnguyen116/Virtual-Scroll-Component/issues) or make a 
+[pull request](https://github.com/alvinnguyen116/Virtual-Scroll-Component/pulls). 
+
+### Acknowledgement
+Big thanks to [BP mishra](https://github.com/bindhyeswari) for his guidance throughout this project. 
+
