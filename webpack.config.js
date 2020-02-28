@@ -27,7 +27,7 @@ module.exports = {
             },
         ]
     },
-    mode: "development",
+    mode: 'production',
     resolve: {
         alias: {
             'react': path.resolve(__dirname, './node_modules/react'),
