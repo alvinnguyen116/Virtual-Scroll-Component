@@ -1,6 +1,6 @@
 {
   "name": "virtual-scroll-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A container component for virtualized scroll.",
   "author": "Alvin Nguyen <alvinnguyen116@gmail.com>",
   "keywords": [
@@ -52,6 +52,6 @@
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
