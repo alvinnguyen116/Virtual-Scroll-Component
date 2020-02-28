@@ -1,6 +1,6 @@
 {
   "name": "virtual-scroll-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A container component for virtualized scroll.",
   "author": "Alvin Nguyen <alvinnguyen116@gmail.com>",
   "keywords": [
