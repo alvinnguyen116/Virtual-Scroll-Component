@@ -1,6 +1,6 @@
 {
   "name": "virtual-scroll-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A container component for virtualized scroll.",
   "author": "Alvin Nguyen <alvinnguyen116@gmail.com>",
   "keywords": [
@@ -10,9 +10,6 @@
   ],
   "main": "./dist/index.js",
   "license": "MIT",
-  "dependencies": {
-    "webpack": "^4.41.6"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alvinnguyen116/Virtual-Scroll-Component.git"
@@ -43,6 +40,7 @@
     "react-test-renderer": "^16.13.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
   "jest": {
